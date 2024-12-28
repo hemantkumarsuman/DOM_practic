@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    
+    <!-- $$$$$$$$$$$$$$  image carousal  $$$$$$$$$$$$$$$$ -->
+
+    <!-- <div id="images">
+        <img src="images/image1.jpeg" alt="image1">
+        <img src="images/image2.jpeg" alt="image2">
+        <img src="images/image3.jpeg" alt="image3">
+    </div>
+
+    <button id="prev">Prev</button>
+
+    <button id="next">Next</button>
+
+    <script>
+
+        const images = document.querySelectorAll('#images img');
+        const prev = document.querySelector('#prev');
+        const next = document.querySelector('#next');
+
+        let current = 0;
+
+        function setCurrentImg(){
+            images.forEach((img,i)=>{
+                img.style.display = i === current ? 'block' : 'none'
+            })
+        }
+
+        prev.addEventListener('click',()=>{
+            current = (current - 1 + images.length) % images.length;
+            setCurrentImg();
+        })
+
+        next.addEventListener('click',()=>{
+            current = (current + 1 + images.length) % images.length;
+            setCurrentImg();
+        })
+
+        setCurrentImg();
+    </script> -->
+
+
+    <!--$$$$$$$$$$$$$$$ Add New List $$$$$$$$$$$$$$$$$$$-->
+
+    <!-- <ul id="lists">
+        <li>item1</li>
+        <li>item2</li>
+        
+    </ul>
+    <button id="add">ADD</button>
+
+    <script>
+
+        const lists = document.querySelector('#lists');
+        
+        const add = document.querySelector('#add');
+
+        add.addEventListener('click',()=>{
+            const list = document.querySelectorAll('#lists li');
+            const newList = document.createElement('li');
+            newList.textContent = `item ${list.length + 1}`
+            lists.appendChild(newList);
+        })
+
+
+    </script> -->
+
+    <!--$$$$$$$$$$$$$$$ Remove List and ADD list combination $$$$$$$$$$$$$$$$$$$-->
+    <!-- <ul id="lists">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <button id='remove'>Remove</button>
+    <button id="add">ADD</button>
+
+    <script>
+
+        const lists = document.querySelector('#lists');
+        const add = document.querySelector('#add');
+        const remove = document.querySelector('#remove');
+
+        remove.addEventListener('click',()=>{
+            
+            const list = document.querySelectorAll('#lists li');
+            if(list.length){
+                lists.removeChild(list[list.length-1])
+            }
+            else{
+                console.log('No list');
+                
+            }
+            
+        })
+
+        add.addEventListener('click',()=>{
+            const list = document.querySelectorAll('#lists li');
+            const newList = document.createElement('li');
+            newList.textContent = `item ${list.length + 1}`
+            lists.appendChild(newList);
+        })
+
+
+
+    </script> -->
+
+
+
+
+</body>
+</html>
