@@ -251,7 +251,37 @@
         item.addEventListener('input',show)
     </script> -->
 
+    <!--$$$$$$$$$$ Light/Dark Mode Toggle $$$$$$$$$$$$$$$ -->
+    <!-- <button id="darkmode">Dark Mode</button>
+    <div id="content">
+        <p>Change mode</p>
+    </div>
 
+    <script>
+
+        const darkmode = document.querySelector('#darkmode');
+        const content = document.querySelector('#content');
+        const para = document.querySelector('#content p')
+        let mode = false;
+
+        darkmode.addEventListener('click',()=>{
+            if(mode){
+                content.style.background='black';
+                para.textContent='Dark Mode';
+                para.style.color='pink'
+            }
+
+            else{
+                content.style.background='yellow';
+                para.textContent='Light Mode';
+                para.style.color='pink'
+            }
+            mode=!mode
+
+        })
+
+
+    </script> -->
 
 </body>
 </html>
