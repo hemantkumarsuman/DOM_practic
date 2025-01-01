@@ -150,7 +150,7 @@
 
 
 
-// Write a JavaScript program to change the string to title (first letter of every word should be in upper case)
+// %%%%%%%%%%%%% Write a JavaScript program to change the string to title (first letter of every word should be in upper case) %%%%%%%%%%%%
 
 // function stringToTitle(str){
 //     const words  = str.split(' ');
@@ -181,6 +181,64 @@
 // let str = 'happy new year'
 // let res = stringToTitle(str);
 // console.log(res);
+
+
+
+// $$$$$$$$$$$$$$$ Fibonacci sequence to a specified number $$$$$$$$$$$$$$$$$$$$
+
+// function fibonnaci(n){
+//     if(n===0){
+//         return;
+//     }
+
+//     if(n===1){
+//         return 0;
+//     }
+
+//     const seq = [0,1];
+
+//     for(let i=2;i<n;i++){
+//         seq.push(seq[i-1]+seq[i-2]);
+//     }
+
+//     return seq;
+// }
+
+// let num = 10;
+// let res = fibonnaci(num);
+// console.log(res);
+
+
+
+
+// %%%%%%%%%%%%%%% ANAGRAM OR NOT %%%%%%%%%%%%%%%%%%
+
+// function anagram(str1,str2){
+//     if(str1.length!==str2.length){
+//         return false;
+//     }
+
+//     if(str1.split('').sort().join('')===str2.split('').sort().join('')){
+//         return true;
+//     }
+//     else return false;
+// }
+
+// let str1 = 'angrama';
+// let str2 = 'gnaamra';
+// let res = anagram(str1,str2);
+// if(res){
+//     console.log('Anagram');
+    
+// }
+// else{
+//     console.log('Not Anagram');
+    
+// }
+
+
+
+
 
 
 
