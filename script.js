@@ -242,37 +242,59 @@
 
 
 
-function mergeSortedArrays(arr1, arr2) {
-    let merged = [];
-    let i = 0;
-    let j = 0;
-    arr1.sort((a,b)=>a-b);
-    arr2.sort((a,b)=>a-b)
-    while (i < arr1.length && j < arr2.length) {
-        if (arr1[i] <= arr2[j]) {
-            merged.push(arr1[i]);
-            i++;
-        } else {
-            merged.push(arr2[j]);
-            j++;
-        }
-    }
-    // Append remaining elements from arr1
-    while (i < arr1.length) {
-        merged.push(arr1[i]);
-        i++;
-    }
-    // Append remaining elements from arr2
-    while (j < arr2.length) {
-        merged.push(arr2[j]);
-        j++;
-    }
-    return merged;
-}
-const arr1 = [1,4,2,7,5];
-const arr2  = [9,1,6,4,6,2,12];
-const mergedArray = mergeSortedArrays(arr1, arr2);
-console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+// function mergeSortedArrays(arr1, arr2) {
+//     let merged = [];
+//     let i = 0;
+//     let j = 0;
+//     arr1.sort((a,b)=>a-b);
+//     arr2.sort((a,b)=>a-b)
+//     while (i < arr1.length && j < arr2.length) {
+//         if (arr1[i] <= arr2[j]) {
+//             merged.push(arr1[i]);
+//             i++;
+//         } else {
+//             merged.push(arr2[j]);
+//             j++;
+//         }
+//     }
+//     // Append remaining elements from arr1
+//     while (i < arr1.length) {
+//         merged.push(arr1[i]);
+//         i++;
+//     }
+//     // Append remaining elements from arr2
+//     while (j < arr2.length) {
+//         merged.push(arr2[j]);
+//         j++;
+//     }
+//     return merged;
+// }
+// const arr1 = [1,4,2,7,5];
+// const arr2  = [9,1,6,4,6,2,12];
+// const mergedArray = mergeSortedArrays(arr1, arr2);
+// console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+
+//%%%%%%%%%%%%%% function that removes the duplicates from an array %%%%%%%%%%%%%%
+
+// function removeDuplicate(arr){
+
+//     let remove = [];
+
+//     for(let i=0;i<arr.length;i++){
+//         if(!remove.includes(arr[i])){
+//             remove.push(arr[i]);
+//         }
+//     }
+
+//     return remove;
+
+// }
+
+// let arr = [1,1,2,3,33,4,33,5,5,6,7];
+// const res = removeDuplicate(arr);
+// console.log(res);
+
 
 
 
