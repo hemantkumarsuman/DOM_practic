@@ -299,6 +299,116 @@
 
 
 
+//************** function that counts the occurrences of each character in the given string *************
+// function countOccurence(str){
+
+//     let countChar = {};
+
+//     for(let i=0;i<str.length;i++){
+//         let char = str[i];
+
+//         countChar[char] = (countChar[char] || 0) + 1;
+
+//     }
+
+//     return countChar;
+
+// }
+
+// let str = 'Hello World';
+// const res = countOccurence(str);
+// console.log(res);
+
+
+
+
+//************ function that categorizes an array of numbers in ascending order ***********
+
+// function ascending(arr){
+//     let res = arr.sort((a,b)=>a-b);
+//     return res;
+// }
+
+// const arr = [12,3,1,4,5,6,45,43];
+// const res = ascending(arr);
+// console.log(res);
+
+
+
+//************** Write a function to find the largest and smallest numbers in the array from the set of a given array of numbers ************
+// function largestSmallest(arr){
+//     let largest = arr[0];
+//     let smallest = arr[0];
+
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i] > largest){
+//             largest = arr[i];
+//         }
+
+//         else if(arr[i] < smallest){
+//             smallest = arr[i];
+//         }
+//     }
+
+//     return {largest,smallest}
+// }
+
+// const arr = [1,2,3,4,5,6];
+// const res = largestSmallest(arr);
+// console.log(res);
+
+
+
+//&&&&&&&&&&&&&&& write a program that reverses the order of words in a sentence &&&&&&&&&&&&
+// function reverseWord(str){
+//     let word = str.split(' ');
+//     for(let i=0;i<word.length/2;i++){
+//         let temp = word[i];
+//         word[i]=word[word.length - 1 - i];
+//         word[word.length - 1 - i] = temp;
+//     }
+
+//     return word;
+// }
+
+// const str = 'How are you';
+// const res = reverseWord(str);
+// console.log(res);
+
+
+//&&&&&&&&& Write a program that uses the array of integers, resulting in the most significant difference between any two numbers &&&&&&&&&&
+
+// function significantDifference(num){
+//     let largestDiff = 0;
+//     for(let i=0;i<num.length;i++){
+//         for(let j=i+1;j<num.length;j++){
+//             let currentDiff = Math.abs(num[i] - num[j]);
+//             if(currentDiff > largestDiff){
+//                 largestDiff = currentDiff;
+//             }
+//         }
+//     }
+
+//     return largestDiff;
+// }
+// const numbers = [10, 5, 25, 8, 15];
+// const res = significantDifference(numbers);
+// console.log(res);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
