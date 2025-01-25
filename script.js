@@ -442,25 +442,39 @@
 // Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values except
 // those that are between a and b. The test is: a ≤ arr[i] ≤ b.
 
-function filterRangeInPlace(arr,a,b){
-    let arr2 = [];
-    for(let i=0;i<arr.length;i++){
-        let val = arr[i];
-        if(val>=a && val<=b){
-            arr2.push(val);
+// function filterRangeInPlace(arr,a,b){
+//     let arr2 = [];
+//     for(let i=0;i<arr.length;i++){
+//         let val = arr[i];
+//         if(val>=a && val<=b){
+//             arr2.push(val);
                         
-        }
-    }
+//         }
+//     }
 
-    return arr2;
-}
+//     return arr2;
+// }
 
 
-let arr = [5, 3, 8, 1];
+// let arr = [5, 3, 8, 1];
 
-let ans = filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
+// let ans = filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
 
-console.log(ans); // [3, 1]
+// console.log(ans); // [3, 1]
+
+
+
+// You have an array of user objects, each one has user.name. Write the code that converts it into an array of names.
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [ john, pete, mary ];
+
+let names = users.map(item=>item.name);
+
+console.log(names); // John, Pete, Mary
 
 
 
