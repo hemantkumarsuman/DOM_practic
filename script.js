@@ -397,6 +397,30 @@
 
 
 
+//%%%%%%Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.&&&&
+// camelize("background-color") == 'backgroundColor';
+// camelize("list-style-image") == 'listStyleImage';
+
+
+// function camelStr(str){
+
+//     //convert str in array
+//     let arr = str.split('-');
+        
+//     let ans = arr.map((element,index)=>
+//         index == 0 ? element : element[0].toUpperCase() + element.slice(1)
+//     )    
+    
+//     return ans.join('');
+    
+// }
+
+// let str = 'background-color'
+// const ans = camelStr(str);
+// console.log(ans);
+
+
+
 
 
 
